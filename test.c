@@ -17,7 +17,7 @@ pthread_cond_t   cv_Y = PTHREAD_COND_INITIALIZER;
 
 int in_tunnel   = 0;      // Nombre de bus actuellement dans le tunnel
 Direction dir   = NONE;   // Direction courante
-tt
+
 int waiting_X   = 0;      // Bus X→Y en attente
 int waiting_Y   = 0;      // Bus Y→X en attente
 
