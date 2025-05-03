@@ -12,7 +12,7 @@
 typedef enum { X_TO_Y, Y_TO_X, NONE } Direction;
 
 pthread_mutex_t  mutex = PTHREAD_MUTEX_INITIALIZER;
-pthread_cond_t   cv_X = PTHREAD_COND_INITIALIZER;
+pthread_cond_t   cv_X = PTHREAD_COND_INITIALIZER;    //variable pour bloquer et reveiller le thread
 pthread_cond_t   cv_Y = PTHREAD_COND_INITIALIZER;
 
 int in_tunnel   = 0;      // Nombre de bus actuellement dans le tunnel
